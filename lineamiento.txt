@@ -1,0 +1,17 @@
+L03 Node 3 JS
+
+Crear una tabla productos en PostgresSql con los siguientes camposo (localhost):
+id (serial), tipo (varchar), nombre (varchar), fecha de caducidad (date/datetime), fecha de produccion(date/time), precio(double) (1p)
+
+crear una carpeta publica para manejar los archivos estaticos y agregar un logo. (1p)
+
+crear una plantilla basada en handlebars y bootstrap (2p)
+
+crear un partial index.html y mostar el listado de los productos registrados en la base de datos. 
+Mostar SOLO LOS CAMPOS {id, nombre, precio} de todos  los productos q no han caducado. (2p) 
+
+crear un partial ingreso.html que contenga un formulario para agregar  un nuevo producto en el servidor utilizando POST. (2p)
+
+permitir elimiar un registro de la tabla productos (2p)
+
+EXTRA: estructura basada en modulos en su codigo (2p) (IMPORTANTISIMOOOO)
