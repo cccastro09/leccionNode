@@ -5,6 +5,7 @@ router.get('/', (req, res) => {
     console.log("hola");
     knex('productos')
     .select()
+    .where("fechacaducidad", '>', '2019-05-02')
     .then(producto =>{
         res.render('producto/index', {objProducto: producto});
     });
