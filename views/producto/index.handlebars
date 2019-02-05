@@ -10,7 +10,7 @@
 
 
 <div class="row">
-<a href="/producto/new" type="button" class="btn btn-default btn-warning" >Nuevo</a>
+<a href="/ingreso" type="button" class="btn btn-default btn-warning" >Nuevo</a>
 <a href="/" type="button" class="btn btn-default btn-warning" >Menú</a>
 
 
@@ -19,10 +19,9 @@
 <table>
 <tr>
   <h3><td>Id</td></h3>
-  <td>TIPO</td>
+
   <td>NOMBRE</td>
-  <td>FECHA CADUCIDAD</td>
-  <td>FECHA PRODUCCION</td>
+
   <td>PRECIO</td>
   <td> </td>
   <td></td>
@@ -37,16 +36,16 @@
 <div class="col-4 col-sm-1">
 <td><h1>{{id}}</h1></td>
 
-<td>  <h5>{{tipo}}</h5></td>
+
 
 <td><h5>{{nombre}} </h5></td>
-  <td><h5>{{fecha-caducidad}}</h5></td>
-  <td><h5>{{fecha-produccion}}</h5></td>
+
+
   <td><h5>{{precio}}</h5></td>
  </div>
- <td><div class="col-4 col-sm-1"><a type="button" class="btn btn-default btn-danger" href='/admin/usuarios/{{id}}/edit'>editar</a></div></td>
+
     <div class="col-4 col-sm-1">
-      <form action='/admin/usuarios/{{id}}?_method=DELETE' method='post'>
+      <form action='/{{id}}?_method=DELETE' method='post'>
     <td>    <button type="submit" class="btn btn-default btn-danger">borrar</button></td>
       </form>
     </div>
