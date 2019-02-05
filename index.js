@@ -25,13 +25,13 @@ app.engine('handlebars', exphbs({defaultLayout:
 app.set('view engine','handlebars');
 //** REQUERIMIENTOS DE ARCHIVOS ROUTES **
 var producto = require('./routes/producto');
-
+var index = require('./routes/index');
 
 //**ENRUTAMIENTO**
 
-app.use('/',producto);
+app.use('/producto',producto);
 
-
+app.use('/',index);
 
 
 

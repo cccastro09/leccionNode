@@ -23,7 +23,7 @@ router.post('/guardar', (req, res) => {
       .insert({tipo : req.body.tipo, fechacaducidad : req.body.fechacaducidad, nombre: req.body.nombre, fechaproduccion: req.body.fechaproduccion, precio: req.body.precio})
       .then(ids =>  {
         const id = ids[0];
-        res.redirect(`/`);
+        res.redirect(`/producto`);
 
   });
 });
@@ -40,7 +40,7 @@ router.delete('/:id',(req,res)=>{
       .del()
       .then(productos => {
         console.log('delete id: '+id);
-        res.redirect('/');
+        res.redirect('/producto');
     });
 
   }else{
